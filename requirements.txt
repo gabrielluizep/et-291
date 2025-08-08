@@ -1,0 +1,6 @@
+ipykernel
+numpy
+scipy
+matplotlib
+scienceplots
+scikit-image
