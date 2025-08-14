@@ -1,0 +1,67 @@
+\documentclass[
+    a4paper,    % Página do tipo a4
+    12pt,       % Fonte padrão 12pt
+    oneside     % Imprimir de apenas um lado da folha
+]{article}
+% Modelo adaptado de https://pt.overleaf.com/project/6228ad3192354f2fcd4e7cc8
+\input{Setup/packages}   % Chamando arquivos de pacotes
+\usepackage{tikz}
+\newcommand*\circled[1]{\tikz[baseline=(char.base)]{
+            \node[shape=circle,draw,inner sep=2pt] (char) {#1};}}
+\DeclareMathAlphabet{\mathcal}{OMS}{cmsy}{m}{n}
+\vspace{-10mm} % Ajuste conforme necessário
+\universidade{Instituto Tecnológico de Aeronautica}
+\universidadesigla{ITA}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage[utf8]{inputenc}  % Para permitir UTF-8
+\usepackage[T1]{fontenc}     % Melhor suporte a caracteres acentuados
+\lstset{
+    language=Python, % Define a linguagem como MATLAB
+    basicstyle=\ttfamily\footnotesize, % Fonte monoespaçada menor
+    keywordstyle=\color{blue}, % Cor para palavras-chave
+    commentstyle=\color{gray}, % Cor para comentários
+    stringstyle=\color{red}, % Cor para strings
+    backgroundcolor=\color{lightgray!10}, % Fundo levemente cinza
+    frame=single, % Coloca uma borda ao redor do código
+    breaklines=true, % Quebra linhas longas
+    captionpos=b % Posição da legenda (b = abaixo)
+    extendedchars=true,  % Habilita caracteres acentuados
+    inputencoding=utf8   % Define UTF-8 para a entrada
+}
+
+
+% Deixe vazio "sp" e "subtitulo" se não houver subtitulo
+
+\nome{Victor Davi dos Santos Bastos \\ Gabriel Espindola}
+\disciplina{ET - 291 - SAR}
+\titulo{Titulo }\sp{: Lista 1}  
+\professor{Prof. Dr. Dimas Irion}
+\curso{Engenharia Eletrônica}
+\local{São José dos Campos/SP}
+\ano{2025}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                        conteúdos                     %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\conteudos{     % Coloque os seus novos arquivos aqui.
+    \newcont{01-introducao.tex}
+
+    
+}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                  começo do documento                 %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+    
+    \imprimircapa               % Imprimi a capa
+    
+    \imprimirconteudos          % Imprimi os conteúdos
+
+\end{document}
